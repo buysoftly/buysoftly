@@ -1,23 +1,26 @@
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
-        <div className="text-2xl font-black text-emerald-500 tracking-tighter">
-          LAPSHIFT
-        </div>
-        <div className="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
-          <a href="#how" className="hover:text-emerald-400">
-            How it Works
+    <nav className="bg-(--color-bg) border-b border-(--color-primary) sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 className="text-xl font-bold text-blue-600">LapShift</h1>
+
+        <nav className="hidden md:flex gap-8 text-sm font-medium">
+          <a href="#" className="hover:text-blue-600">
+            Shop
           </a>
-          <a href="#gear" className="hover:text-emerald-400">
-            Browse Gear
+          <a href="#" className="hover:text-blue-600">
+            Bundles
           </a>
-          <a href="#security" className="hover:text-emerald-400">
-            Security
+          <a href="#" className="hover:text-blue-600">
+            About
           </a>
-        </div>
-        <button className="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2 rounded-full text-sm font-bold transition-all">
-          Start Swapping
+          <a href="#" className="hover:text-blue-600">
+            Contact
+          </a>
+        </nav>
+
+        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
+          Get a Quote
         </button>
       </div>
     </nav>
