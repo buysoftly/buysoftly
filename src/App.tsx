@@ -165,7 +165,7 @@ export default function App() {
             <Icon
               icon="mdi:percent-outline"
               width="40"
-              className="mx-auto text-green-600"
+              className="mx-auto text-blue-600"
             />
             <h3 className="font-semibold mt-4">0% Interest</h3>
             <p className="text-gray-600 text-sm mt-2">
@@ -177,7 +177,7 @@ export default function App() {
             <Icon
               icon="mdi:shield-lock-outline"
               width="40"
-              className="mx-auto text-green-600"
+              className="mx-auto text-blue-600"
             />
             <h3 className="font-semibold mt-4">Data Security</h3>
             <p className="text-gray-600 text-sm mt-2">
@@ -189,7 +189,7 @@ export default function App() {
             <Icon
               icon="mdi:check-decagram-outline"
               width="40"
-              className="mx-auto text-green-600"
+              className="mx-auto text-blue-600"
             />
             <h3 className="font-semibold mt-4">Authenticity</h3>
             <p className="text-gray-600 text-sm mt-2">
