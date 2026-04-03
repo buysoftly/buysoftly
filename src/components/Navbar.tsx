@@ -19,9 +19,12 @@ export default function Navbar() {
           </a>
         </nav>
 
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">
+        <a
+          href="https://lapshift.up.railway.app"
+          className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700"
+        >
           Get a Quote
-        </button>
+        </a>
       </div>
     </nav>
   );

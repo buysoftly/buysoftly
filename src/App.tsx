@@ -15,7 +15,7 @@ export default function App() {
 
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-2 md:gap-12 items-center">
-        <div>
+        <div className="text-center md:text-start">
           <h1 className="text-center md:text-start text-5xl md:text-6xl font-bold leading-tight">
             Upgrade Your Gear.
             <span className="text-3xl md:text-4xl mt-3 text-blue-600 block">
@@ -29,14 +29,20 @@ export default function App() {
             <span className="font-semibold"> "Small-Small"</span> installments.
           </p>
 
-          <div className="mt-8 flex gap-4">
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700">
+          <div className="mt-8 flex items-center justify-center md:justify-start gap-4">
+            <a
+              href="https://lapshift.up.railway.app"
+              className="bg-blue-600 text-white px-2 md:px-6 py-3 rounded-lg font-normal md:font-semibold hover:bg-blue-700"
+            >
               Get a Swap Quote
-            </button>
+            </a>
 
-            <button className="border px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">
+            <a
+              href="https://lapshift.up.railway.app"
+              className="border px-2 md:px-6 py-3 rounded-lg font-normal md:font-semibold hover:bg-gray-100"
+            >
               Browse Bundles
-            </button>
+            </a>
           </div>
         </div>
 
@@ -309,9 +315,12 @@ export default function App() {
             Join 500+ developers shifting to better gear today. Start your
             valuation and see how much your old device is worth.
           </p>
-          <button className="bg-white text-blue-600 px-10 py-5 rounded-2xl font-black text-xl hover:scale-105 transition-transform relative z-10 shadow-xl">
+          <a
+            href="https://lapshift.up.railway.app"
+            className="bg-white text-blue-600 px-5 md:px-10 py-5 rounded-2xl font-black text-xl hover:scale-105 transition-transform relative z-10 shadow-xl"
+          >
             Start My Swap Now
-          </button>
+          </a>
         </div>
       </section>
 
