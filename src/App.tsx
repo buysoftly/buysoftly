@@ -1,64 +1,104 @@
 import { Icon } from "@iconify/react";
 
 //images
-import HeroImage from "./assets/image/work-station.png";
+import herLaptop from "./assets/image/hero-laptop.svg";
+// import HeroImage from "./assets/image/work-station.png";
 
 //componets
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export default function App() {
+  const badges = [
+    {
+      icon: "mdi:star-four-points-outline",
+      text: "Start From ₦31,000/Month",
+      pos: "top-[8%] md:top-[32%] md:-left-[15%]",
+    },
+    {
+      icon: "mdi:cog-outline",
+      text: "Flexible Payments",
+      pos: "top-[48%] right-[5%] md:top-[44%] md:right-[30%]",
+    },
+    {
+      icon: "mdi:snowflake",
+      text: "No Hidden Fees",
+      pos: "bottom-[10%] left-[2%] md:bottom-[30%] md:-left-[2%]",
+    },
+  ];
+
   return (
     <>
-      {/* HEADER */}
-      <Navbar />
-
       {/* HERO */}
-      <section className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-2 md:gap-12 items-center">
-        <div className="text-center md:text-start">
-          <h1 className="text-center md:text-start text-5xl md:text-6xl font-bold leading-tight">
-            Upgrade Your Gear.
-            <span className="text-3xl md:text-4xl mt-3 text-blue-600 block">
-              Level Up Your Career.
-            </span>
-          </h1>
+      <section className="min-h-screen bg-[url('/img/hero-bg.svg')] bg-center bg-cover relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 py-6">
+          <nav className="bg-white/50 backdrop-blur rounded-full px-6 py-4 flex items-center justify-between">
+            <div className="flex items-center gap-2 font-bold text-sky-600">
+              <span className="text-2xl">Buysoftly</span>
+            </div>
+            <ul className="hidden md:flex gap-8 text-sm text-slate-700">
+              <li className="text-sky-600 font-medium">Home</li>
+              <li>About</li>
+              <li>How It Works</li>
+              <li>Plans</li>
+              <li>Contact Us</li>
+            </ul>
+            <button className="bg-blue-500 text-white px-6 py-3 rounded-xl text-sm font-medium">
+              Sign Up
+            </button>
+          </nav>
 
-          <p className="mt-6 text-lg text-gray-600">
-            The first workstation marketplace in Nigeria that lets you swap old
-            devices for new ones and pay the balance in easy
-            <span className="font-semibold"> "Small-Small"</span> installments.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start pt-10 md:pt-14">
+            <div>
+              <h1 className="text-4xl sm:text-5xl md:text-5xl font-extrabold leading-tight text-slate-950 text-center md:text-left">
+                Own Your Work <br /> Setup Without Paying <br />
+                <span className="text-blue-500">Everything Upfront</span>
+              </h1>
+              <p className="mt-5 text-slate-600 max-w-lg text-center md:text-left mx-auto md:mx-0">
+                Get laptops and accessories with flexible monthly payments.
+                Start building your dream workstation today.
+              </p>
+              <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <button className="bg-blue-500 text-white px-6 py-3 rounded-xl font-medium">
+                  Shop Now
+                </button>
+                <button className="border border-blue-500 text-blue-500 px-6 py-3 rounded-xl font-medium">
+                  How it works
+                </button>
+              </div>
+            </div>
 
-          <div className="mt-8 flex items-center justify-center md:justify-start gap-4">
-            <a
-              href="https://lapshift.up.railway.app"
-              className="bg-blue-600 text-white px-3 md:px-6 py-3 rounded-lg font-normal md:font-semibold hover:bg-blue-700"
-            >
-              Get a Swap Quote
-            </a>
+            <div className="relative h-90 sm:h-110 md:h-130 md:mt-0">
+              <img
+                src={herLaptop}
+                className="absolute top-4 right-8 md:-top-30 md:right-20 sm:w-150 md:w-180 rounded-2xl"
+              />
 
-            <a
-              href="https://lapshift.up.railway.app"
-              className="border px-3 md:px-6 py-3 rounded-lg font-normal md:font-semibold hover:bg-gray-100"
-            >
-              Browse Bundles
-            </a>
+              {badges.map((item, i) => (
+                <div
+                  key={i}
+                  className={`absolute ${item.pos} flex text-xs md:text-sm bg-white rounded-xl shadow-lg px-4 py-3 items-center gap-2`}
+                >
+                  <span className="text-sky-500">
+                    <Icon icon={item.icon} width={20} />
+                  </span>
+                  <span className="text-xs font-medium text-slate-700">
+                    {item.text}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-
-        <div className="rounded-xl h-87.5 flex items-center justify-center">
-          <img src={HeroImage} alt="hero-image" />
         </div>
       </section>
 
       {/* PROBLEM */}
-      <section className="bg-blue-600/20 py-20">
+      <section className="bg-[url('/img/pro-bg.svg')] py-20">
         <div className="max-w-4xl mx-auto text-center px-6">
-          <h2 className="text-3xl font-bold">
+          <h2 className="text-3xl font-bold p-5">
             Pro-Gear shouldn't cost a fortune.
           </h2>
 
-          <p className="mt-6 text-lg text-gray-600">
+          <p className="mt-6 text-lg text-gray-600 p-2">
             You need the best tools to do your best work, but high prices and
             predatory interest rates are standing in your way. LapShift was
             built by creators, for creators, to make professional hardware

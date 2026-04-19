@@ -1,23 +1,20 @@
 @import "tailwindcss";
 
 /* =====================================================
-   LapShift Global Design System
+   Buysoftly Global Design System
    Version: 2.0
    Focus: Trust • Marketing Attraction • Readability
 ===================================================== */
-
+/* =====================================
+   BRAND COLORS
+===================================== */
 :root {
-  /* =====================================
-     BRAND COLORS
-  ===================================== */
+  --primary-100: #138aff;
+  --primary-200: #c5e2ff;
 
-  --color-primary: #155dfc;
-  --color-primary-hover: #1447e6;
+  --secondary: #eef7ff;
 
-  --color-secondary: #06b6d4; /* Teal - Marketing Accent */
-  --color-secondary-hover: #0891b2;
-
-  --color-accent: #f5f5f5; /* Amber - Installment Highlight */
+  --accent: #e9f4ff;
 
   /* =====================================
      BACKGROUNDS
@@ -31,9 +28,9 @@
      TEXT COLORS
   ===================================== */
 
-  --color-text-primary: #0f172a; /* Headlines & main text */
-  --color-text-secondary: #475569; /* Subtitles & secondary info */
-  --color-text-muted: #94a3b8; /* Muted info / placeholders */
+  --text-primary: #0f172a; /* Headlines & main text */
+  --text-secondary: #475569; /* Subtitles & secondary info */
+  --text-muted: #94a3b8; /* Muted info / placeholders */
 
   /* =====================================
      UI STRUCTURE
