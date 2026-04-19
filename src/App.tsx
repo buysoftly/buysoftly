@@ -46,16 +46,21 @@ export default function App() {
               <li className="cursor-pointer">Contact Us</li>
             </ul>
 
-            <button className="bg-blue-500 hover:bg-blue-600 transition text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl text-sm font-medium">
-              Sign Up
-            </button>
+            <a
+              href="https://lapshift.up.railway.app/register"
+              className="shrink-0"
+            >
+              <button className="bg-blue-500 hover:bg-blue-600 transition text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl text-sm font-medium">
+                Sign Up
+              </button>
+            </a>
           </nav>
 
           {/* HERO CONTENT */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start pt-5 md:pt-10">
             {/* LEFT */}
             <div className="text-center lg:text-left">
-              <h1 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold leading-tight text-slate-950">
+              <h1 className="text-4xl sm:text-4xl font-extrabold leading-tight text-slate-950">
                 Own Your Work <br />
                 Setup Without Paying <br />
                 <span className="text-blue-500">Everything Upfront</span>
@@ -68,11 +73,15 @@ export default function App() {
 
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <button className="bg-blue-500 hover:bg-blue-600 transition text-white px-6 py-3 rounded-xl font-medium">
-                  Shop Now
+                  <a className="block" href="https://lapshift.up.railway.app/">
+                    Shop Now
+                  </a>
                 </button>
 
                 <button className="border border-blue-500 text-blue-500 hover:bg-blue-50 transition px-6 py-3 rounded-xl font-medium">
-                  How it works
+                  <a className="block" href="#how-it-works">
+                    How it works
+                  </a>
                 </button>
               </div>
             </div>
