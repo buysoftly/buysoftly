@@ -116,22 +116,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* PROBLEM */}
-      <section className="bg-[url('/img/pro-bg.svg')] py-20">
-        <div className="max-w-4xl mx-auto text-center px-6">
-          <h2 className="text-3xl font-bold p-5">
-            Pro-Gear shouldn't cost a fortune.
-          </h2>
-
-          <p className="mt-6 text-lg text-gray-600 p-2">
-            You need the best tools to do your best work, but high prices and
-            predatory interest rates are standing in your way. LapShift was
-            built by creators, for creators, to make professional hardware
-            accessible to everyone.
-          </p>
-        </div>
-      </section>
-
       {/* HOW IT WORKS */}
       <section id="how" className="py-24 ">
         <div className="max-w-7xl mx-auto px-6">
@@ -196,8 +180,29 @@ export default function App() {
         </div>
       </section>
 
+      {/* PROBLEM */}
+      <section className="relative bg-[url('/img/pro-bg.svg')] bg-cover bg-center bg-no-repeat min-h-70 sm:min-h-95 md:min-h-125 lg:min-h-155 flex items-center">
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40"></div>
+
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-8 md:px-14 lg:px-20 py-8">
+          <div className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl text-left">
+            <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-white">
+              Pro-Gear shouldn&apos;t cost a fortune.
+            </h2>
+
+            <p className="mt-3 sm:mt-5 text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed text-white/90">
+              You need the best tools to do your best work, but high prices and
+              predatory interest rates are standing in your way. LapShift was
+              built by creators, for creators, to make professional hardware
+              accessible to everyone.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* BUNDLES */}
-      <section className="bg-blue-600/20 py-20">
+      <section className="bg-(--accent) py-20">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-16">
             Curated Professional Bundles
@@ -236,7 +241,7 @@ export default function App() {
             <Icon
               icon="mdi:percent-outline"
               width="40"
-              className="mx-auto text-blue-600"
+              className="mx-auto text-(--primary-100)"
             />
             <h3 className="font-semibold mt-4">0% Interest</h3>
             <p className="text-gray-600 text-sm mt-2">
@@ -248,7 +253,7 @@ export default function App() {
             <Icon
               icon="mdi:shield-lock-outline"
               width="40"
-              className="mx-auto text-blue-600"
+              className="mx-auto text-(--primary-100)"
             />
             <h3 className="font-semibold mt-4">Data Security</h3>
             <p className="text-gray-600 text-sm mt-2">
@@ -260,7 +265,7 @@ export default function App() {
             <Icon
               icon="mdi:check-decagram-outline"
               width="40"
-              className="mx-auto text-blue-600"
+              className="mx-auto text-(--primary-100)"
             />
             <h3 className="font-semibold mt-4">Authenticity</h3>
             <p className="text-gray-600 text-sm mt-2">
@@ -276,7 +281,7 @@ export default function App() {
           <div>
             <h2 className="text-4xl font-black mb-8">
               We take your <br />
-              <span className="text-blue-600">Security</span> seriously.
+              <span className="text-(--primary-100)">Security</span> seriously.
             </h2>
             <div className="space-y-6">
               {[
@@ -296,7 +301,7 @@ export default function App() {
                 <div key={i} className="flex gap-4">
                   <Icon
                     icon="lucide:check-circle-2"
-                    className="text-(--color-primary) shrink-0"
+                    className="text-(--primary-100) shrink-0"
                   />
                   <div>
                     <h4 className="font-bold">{item.title}</h4>
@@ -306,17 +311,17 @@ export default function App() {
               ))}
             </div>
           </div>
-          <div className="bg-linear-to-br from-blue-600/20 to-blue-600/20 aspect-square rounded-[3rem] border border-emerald-500/20 flex items-center justify-center">
+          <div className="bg-linear-to-br from-(--primary-100)/20 to-(--primary-200)/20 aspect-square rounded-[3rem] border border-emerald-500/20 flex items-center justify-center">
             <Icon
               icon="lucide:shield-check"
               width={160}
-              className="text-(--color-primary) animate-pulse"
+              className="text-(--primary-100) animate-pulse"
             />
           </div>
         </div>
       </section>
 
-      <section className="bg-blue-600 text-white py-20">
+      <section className="bg-(--primary-100) text-white py-20">
         <div className="max-w-4xl mx-auto text-center px-6">
           <h2 className="text-3xl font-bold">Your investment is secure.</h2>
 
@@ -369,7 +374,7 @@ export default function App() {
 
       {/* 5. FINAL CTA */}
       <section className="py-15 md:py-32 px-2 md:px-6">
-        <div className="max-w-5xl mx-auto bg-blue-600 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
+        <div className="max-w-5xl mx-auto bg-(--primary-100) rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
           <div className="absolute top-0 right-0 p-12 opacity-10">
             <Icon icon="lucide:cpu" width={200} />
           </div>
@@ -382,7 +387,7 @@ export default function App() {
           </p>
           <a
             href="https://lapshift.up.railway.app"
-            className="bg-white text-blue-600 px-5 md:px-10 py-5 rounded-2xl font-black text-xl hover:scale-105 transition-transform relative z-10 shadow-xl"
+            className="bg-white text-(--primary-100) px-5 md:px-10 py-5 rounded-2xl font-black text-xl hover:scale-105 transition-transform relative z-10 shadow-xl"
           >
             Start My Swap Now
           </a>
