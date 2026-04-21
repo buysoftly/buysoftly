@@ -8,7 +8,7 @@ import StepCard from "./cards/StepCard";
 
 export default function HowItWork() {
   return (
-    <section id="how-it-work" className="bg-white">
+    <section id="how-it-works" className="bg-white">
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="grid gap-6 md:grid-cols-2 md:items-start">
           <div>

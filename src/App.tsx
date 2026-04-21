@@ -27,21 +27,26 @@ export default function App() {
             </div>
 
             <ul className="hidden lg:flex gap-8 text-sm text-slate-700">
-              <li className="text-sky-600 font-medium cursor-pointer">Home</li>
-              <li className="cursor-pointer">About</li>
-              <li className="cursor-pointer">How It Works</li>
-              <li className="cursor-pointer">Plans</li>
-              <li className="cursor-pointer">Contact Us</li>
+              <li className="text-sky-600 font-medium cursor-pointer">
+                <a href="/">Home</a>
+              </li>
+              <li className="cursor-pointer">
+                <a href="/#about">About</a>
+              </li>
+              <li className="cursor-pointer">
+                <a href="/#how-it-works">How It Works</a>
+              </li>
+              <li className="cursor-pointer">
+                <a href="/#plans">Plans</a>
+              </li>
+              <li className="cursor-pointer">
+                <a href="/#contact">Contact Us</a>
+              </li>
             </ul>
 
-            <a
-              href="https://lapshift.up.railway.app/register"
-              className="shrink-0"
-            >
-              <button className="bg-blue-500 hover:bg-blue-600 transition text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl text-sm font-medium">
-                Sign Up
-              </button>
-            </a>
+            <button className="bg-blue-500 hover:bg-blue-600 transition text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl text-sm font-medium">
+              <a href="https://lapshift.up.railway.app/register">Sign Up</a>
+            </button>
           </nav>
 
           {/* HERO CONTENT */}
