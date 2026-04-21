@@ -1,31 +1,19 @@
 import { Icon } from "@iconify/react";
 
+//data
+import { badges } from "./data";
+
 //images
 import herLaptop from "./assets/image/hero-laptop.svg";
+import investSecure from "./assets/image/invest-secure.svg";
 // import HeroImage from "./assets/image/work-station.png";
 
 //componets
+import Faq from "./components/Faq";
 import Footer from "./components/Footer";
+import Security from "./components/Security";
 
 export default function App() {
-  const badges = [
-    {
-      icon: "mdi:star-four-points-outline",
-      text: "Start From ₦31,000/Month",
-      pos: "top-[6%] left-2 sm:left-6 md:top-[35%] md:-left-6 lg:-left-12",
-    },
-    {
-      icon: "mdi:cog-outline",
-      text: "Flexible Payments",
-      pos: "top-[48%] right-2 sm:right-6 md:top-[56%] md:right-0 lg:-right-10",
-    },
-    {
-      icon: "mdi:snowflake",
-      text: "No Hidden Fees",
-      pos: "bottom-[8%] left-2 sm:left-6 md:bottom-[14%] md:left-0 lg:-left-8",
-    },
-  ];
-
   return (
     <>
       {/* HERO */}
@@ -185,7 +173,7 @@ export default function App() {
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
 
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-8 md:px-14 lg:px-20 py-8">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 py-8">
           <div className="max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl text-left">
             <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-white">
               Pro-Gear shouldn&apos;t cost a fortune.
@@ -276,123 +264,15 @@ export default function App() {
       </section>
 
       {/* 4. TRUST & SECURITY */}
-      <section id="security" className="py-24">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
-          <div>
-            <h2 className="text-4xl font-black mb-8">
-              We take your <br />
-              <span className="text-(--primary-100)">Security</span> seriously.
-            </h2>
-            <div className="space-y-6">
-              {[
-                {
-                  title: "DoD Standard Data Wipe",
-                  desc: "We securely erase your old laptop's data before resale.",
-                },
-                {
-                  title: "Bank-Grade Payments",
-                  desc: "Your savings are held securely via Paystack-licensed partners.",
-                },
-                {
-                  title: "MDM Protection",
-                  desc: "Every device is insured and secured via remote-lock tech.",
-                },
-              ].map((item, i) => (
-                <div key={i} className="flex gap-4">
-                  <Icon
-                    icon="lucide:check-circle-2"
-                    className="text-(--primary-100) shrink-0"
-                  />
-                  <div>
-                    <h4 className="font-bold">{item.title}</h4>
-                    <p className="text-slate-400 text-sm">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="bg-linear-to-br from-(--primary-100)/20 to-(--primary-200)/20 aspect-square rounded-[3rem] border border-emerald-500/20 flex items-center justify-center">
-            <Icon
-              icon="lucide:shield-check"
-              width={160}
-              className="text-(--primary-100) animate-pulse"
-            />
-          </div>
-        </div>
-      </section>
+      <Security />
 
-      <section className="bg-(--primary-100) text-white py-20">
-        <div className="max-w-4xl mx-auto text-center px-6">
-          <h2 className="text-3xl font-bold">Your investment is secure.</h2>
-
-          <p className="mt-6 text-lg text-blue-100">
-            We partner with licensed payment processors to ensure your
-            "Small-Small" savings are safe. Our delivery-at-50% model lets you
-            start working faster than traditional savings plans.
-          </p>
-        </div>
+      {/* investment */}
+      <section className="w-full">
+        <img src={investSecure} alt="Invest Secure" />
       </section>
 
       {/* FAQ */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Frequently Asked Questions
-          </h2>
-
-          <div className="space-y-8">
-            <div>
-              <h4 className="font-semibold">What laptops can I swap?</h4>
-              <p className="text-gray-600 text-sm mt-2">
-                Almost any functional laptop from 2018 upwards.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold">Is my money safe?</h4>
-              <p className="text-gray-600 text-sm mt-2">
-                Yes. Funds are held in secure escrow until your milestone is
-                met.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold">Can I pay faster?</h4>
-              <p className="text-gray-600 text-sm mt-2">
-                Yes. You can top up your balance anytime.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Features / How it works */}
-      {/* <section className="mt-32">
-
-
-      </section> */}
-
-      {/* 5. FINAL CTA */}
-      <section className="py-15 md:py-32 px-2 md:px-6">
-        <div className="max-w-5xl mx-auto bg-(--primary-100) rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
-          <div className="absolute top-0 right-0 p-12 opacity-10">
-            <Icon icon="lucide:cpu" width={200} />
-          </div>
-          <h2 className="text-4xl md:text-6xl font-black text-white mb-8 relative z-10">
-            Ready to upgrade <br /> your workstation?
-          </h2>
-          <p className="text-white text-lg mb-12 max-w-xl mx-auto relative z-10">
-            Join 500+ developers shifting to better gear today. Start your
-            valuation and see how much your old device is worth.
-          </p>
-          <a
-            href="https://lapshift.up.railway.app"
-            className="bg-white text-(--primary-100) px-5 md:px-10 py-5 rounded-2xl font-black text-xl hover:scale-105 transition-transform relative z-10 shadow-xl"
-          >
-            Start My Swap Now
-          </a>
-        </div>
-      </section>
+      <Faq />
 
       {/* FOOTER */}
       <Footer />
