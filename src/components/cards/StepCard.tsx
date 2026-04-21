@@ -1,28 +1,31 @@
-import { Icon } from "@iconify/react";
-
-export function StepCard({
-  step,
+export default function StepCard({
+  number,
   title,
-  desc,
-  icon,
+  description,
+  isRight,
+  isBottom,
 }: {
-  step: number;
+  number: string;
   title: string;
-  desc: string;
-  icon: string;
+  description: string;
+  isRight: boolean;
+  isBottom: boolean;
 }) {
   return (
-    <div className="group p-8 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-      <div className="mb-6 flex items-center justify-between">
-        <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center">
-          <Icon icon={icon} width="24" />
-        </div>
-        <span className="text-4xl font-black text-slate-100 group-hover:text-blue-50 transition-colors">
-          0{step}
-        </span>
-      </div>
-      <h3 className="text-lg font-bold mb-2">{title}</h3>
-      <p className="text-slate-500 text-sm leading-relaxed">{desc}</p>
+    <div
+      className={`px-8 py-10 ${!isRight ? "border-r border-white/20" : ""} ${!isBottom ? "border-b border-white/20" : ""}`}
+    >
+      <span className="text-4xl font-bold tracking-tight text-cyan-300">
+        {number}
+      </span>
+
+      <h3 className="mt-4 text-sm font-bold tracking-wide text-white">
+        {title}
+      </h3>
+
+      <p className="mt-3 max-w-xs text-xs leading-6 text-blue-100/80">
+        {description}
+      </p>
     </div>
   );
 }

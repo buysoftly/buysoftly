@@ -12,6 +12,7 @@ import investSecure from "./assets/image/invest-secure.svg";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import Security from "./components/Security";
+import HowItWork from "./components/HowItWork";
 
 export default function App() {
   return (
@@ -104,72 +105,8 @@ export default function App() {
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
-      <section id="how" className="py-24 ">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-black mb-4">
-              How LapShift Works
-            </h2>
-            <p className="text-slate-400">
-              Designed for the Nigerian tech professional.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-10">
-            <div className="text-center">
-              <Icon
-                icon="mdi:laptop"
-                width="40"
-                className="mx-auto text-blue-600"
-              />
-              <h3 className="font-semibold mt-4">Pick Your Shift</h3>
-              <p className="text-sm text-gray-600 mt-2">
-                Choose a single device or a curated professional bundle.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <Icon
-                icon="mdi:swap-horizontal"
-                width="40"
-                className="mx-auto text-blue-600"
-              />
-              <h3 className="font-semibold mt-4">Instant Swap Value</h3>
-              <p className="text-sm text-gray-600 mt-2">
-                Tell us about your old laptop and get an immediate discount.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <Icon
-                icon="mdi:wallet-outline"
-                width="40"
-                className="mx-auto text-blue-600"
-              />
-              <h3 className="font-semibold mt-4">Save-Small-Small</h3>
-              <p className="text-sm text-gray-600 mt-2">
-                Pay the remaining balance at your own pace.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <Icon
-                icon="mdi:truck-delivery-outline"
-                width="40"
-                className="mx-auto text-blue-600"
-              />
-              <h3 className="font-semibold mt-4">80% Milestone</h3>
-              <p className="text-sm text-gray-600 mt-2">
-                Once you hit 80%, we deliver your gear.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* PROBLEM */}
-      <section className="relative bg-[url('/img/pro-bg.svg')] bg-cover bg-center bg-no-repeat min-h-70 sm:min-h-95 md:min-h-125 lg:min-h-155 flex items-center">
+      <section className="relative bg-[url('/img/pro-bg.svg')] bg-cover bg-center bg-no-repeat mx-auto mt-10 md:mt-20 min-h-70 sm:min-h-95 md:min-h-125 lg:min-h-155 flex items-center">
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
 
@@ -189,79 +126,8 @@ export default function App() {
         </div>
       </section>
 
-      {/* BUNDLES */}
-      <section className="bg-(--accent) py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-16">
-            Curated Professional Bundles
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-10">
-            <div className="bg-white rounded-xl p-6 hover:shadow-lg transition">
-              <h3 className="font-bold text-lg">Developer Bundle</h3>
-              <p className="mt-3 text-gray-600 text-sm">
-                MacBook Pro + 27” 4K Monitor + Mechanical Keyboard.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-6 hover:shadow-lg transition">
-              <h3 className="font-bold text-lg">Creator Studio</h3>
-              <p className="mt-3 text-gray-600 text-sm">
-                MacBook Air + Ring Light + High-fidelity Microphone.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-6 hover:shadow-lg transition">
-              <h3 className="font-bold text-lg">Student Essentials</h3>
-              <p className="mt-3 text-gray-600 text-sm">
-                Reliable ThinkPad + Wireless Mouse + Noise-cancelling
-                Headphones.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* VALUE PROPOSITION */}
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-center">
-          <div>
-            <Icon
-              icon="mdi:percent-outline"
-              width="40"
-              className="mx-auto text-(--primary-100)"
-            />
-            <h3 className="font-semibold mt-4">0% Interest</h3>
-            <p className="text-gray-600 text-sm mt-2">
-              We aren't a bank. You pay the price you see.
-            </p>
-          </div>
-
-          <div>
-            <Icon
-              icon="mdi:shield-lock-outline"
-              width="40"
-              className="mx-auto text-(--primary-100)"
-            />
-            <h3 className="font-semibold mt-4">Data Security</h3>
-            <p className="text-gray-600 text-sm mt-2">
-              Military-grade data wipe on all swapped devices.
-            </p>
-          </div>
-
-          <div>
-            <Icon
-              icon="mdi:check-decagram-outline"
-              width="40"
-              className="mx-auto text-(--primary-100)"
-            />
-            <h3 className="font-semibold mt-4">Authenticity</h3>
-            <p className="text-gray-600 text-sm mt-2">
-              100% genuine hardware with warranty coverage.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* HOW IT WORKS */}
+      <HowItWork />
 
       {/* 4. TRUST & SECURITY */}
       <Security />

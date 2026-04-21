@@ -1,3 +1,30 @@
+//how it work
+export const usageSteps = [
+  {
+    number: "01",
+    title: "CHOOSE DEVICE",
+    description:
+      "Filter by brand, performance tier, category, and compare specs with monthly estimates side by side.",
+  },
+  {
+    number: "02",
+    title: "INSTANT SWAP VALUE",
+    description:
+      "Tell us about your old laptop and get an immediate trade-in estimate discount.",
+  },
+  {
+    number: "03",
+    title: "SAVE SMALL SMALL",
+    description:
+      "Pay the remaining balance at your own pace. Pick your plan length.",
+  },
+  {
+    number: "04",
+    title: "80% MILESTONE",
+    description: "Once you hit 80%, we deliver your device.",
+  },
+];
+
 //Hero barge data
 export const badges = [
   {
