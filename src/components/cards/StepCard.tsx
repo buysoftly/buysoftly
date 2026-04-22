@@ -15,7 +15,7 @@ export default function StepCard({
     <div
       className={`px-8 py-10 ${!isRight ? "border-r border-white/20" : ""} ${!isBottom ? "border-b border-white/20" : ""}`}
     >
-      <span className="text-4xl font-bold tracking-tight text-cyan-300">
+      <span className="text-4xl font-bold tracking-tight text-(--primary-200)">
         {number}
       </span>
 

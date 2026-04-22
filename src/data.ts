@@ -44,6 +44,15 @@ export const badges = [
   },
 ];
 
+// scroll bar data
+export const ScrollItems = [
+  "Handles · Accessories",
+  "Flexible Installments",
+  "0% Interest · 6 Months",
+  "Trade-In Available",
+  "48hr Delivery",
+];
+
 //Security data
 export const securityItems = [
   {

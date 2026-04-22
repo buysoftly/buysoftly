@@ -9,7 +9,7 @@ import StepCard from "./cards/StepCard";
 export default function HowItWork() {
   return (
     <section id="how-it-works" className="bg-white">
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 mt-10 md:mt-20 sm:px-6 lg:px-8">
         <div className="grid gap-6 md:grid-cols-2 md:items-start">
           <div>
             <h2 className="text-4xl font-black tracking-tight text-slate-950">
@@ -27,7 +27,7 @@ export default function HowItWork() {
         </div>
       </div>
 
-      <div className="bg-linear-to-r from-[#0B5FB8] via-[#004B97] to-[#002E63] py-16 md:py-20">
+      <div className="bg-linear-to-r from-(--primary-100) via-[#004B97] to-[#002E63] py-16 md:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="overflow-hidden border border-white/20">
             <div className="grid md:grid-cols-2">

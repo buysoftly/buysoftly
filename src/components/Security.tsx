@@ -8,6 +8,7 @@ import securityImage from "../assets/image/security-image.svg";
 
 //components
 import { Icon } from "@iconify/react";
+import AutoScrollBar from "./AutoScrollBar";
 
 function SecurityFeature({
   title,
@@ -36,14 +37,15 @@ function SecurityFeature({
 
 export default function Security() {
   return (
-    <section id="security" className="py-10 md:py-20 bg-white">
-      {/* <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center"> */}
+    <section id="security" className="mt-10 md:mt-20 bg-white">
+      <AutoScrollBar />
+
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">
           We Take Your Security Seriously
         </h2>
 
-        <div className="mt-8 rounded-4xl bg-slate-100 p-5 md:p-8 shadow-sm">
+        <div className="mt-8 rounded-4xl bg-(--accent) p-5 md:p-8 shadow-sm">
           <div className="grid items-center gap-8 lg:grid-cols-[320px_1fr]">
             <div className="space-y-7">
               {securityItems.map((item) => (

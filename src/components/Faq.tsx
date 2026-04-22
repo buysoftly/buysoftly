@@ -15,7 +15,7 @@ export default function Faq() {
   };
 
   return (
-    <section className="bg-white py-10 md:py-20">
+    <section className="bg-white mt-10 md:mt-20">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="mb-10 text-center">
           <span className="inline-flex items-center rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-[11px] font-medium text-sky-600">

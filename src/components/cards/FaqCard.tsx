@@ -17,7 +17,7 @@ export default function FaqCard({
   onToggle,
 }: FaqCardProps) {
   return (
-    <div className="overflow-hidden rounded-2xl bg-slate-100/90 transition-all duration-300">
+    <div className="overflow-hidden rounded-2xl bg-(--accent) transition-all duration-300">
       <button
         type="button"
         onClick={onToggle}
@@ -34,7 +34,7 @@ export default function FaqCard({
             isOpen && "rotate-45",
           )}
         >
-          <Icon icon="mdi:plus" className="text-lg" />
+          <Icon icon="mdi:plus" className="text-(--primary-100) text-lg" />
         </span>
       </button>
 
