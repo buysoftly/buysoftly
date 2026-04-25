@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 //data
 import { badges } from "../data";
 
@@ -15,12 +17,14 @@ export default function Hero() {
         {/* NAVBAR */}
         <nav className="bg-white/70 backdrop-blur-xl rounded-2xl md:rounded-full px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
           <div className="flex items-center gap-2 font-bold text-(--primary-100) shrink-0">
-            <span className="text-xl">Buysoftly</span>
+            <Link to="/">
+              <span className="text-2xl">Buysoftly</span>
+            </Link>
           </div>
 
           <ul className="hidden lg:flex gap-8 text-xs text-slate-700">
             <li className="text-(--primary-100) font-medium cursor-pointer">
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li className="cursor-pointer">
               <a href="/#about">About</a>
@@ -36,9 +40,11 @@ export default function Hero() {
             </li>
           </ul>
 
-          <button className="bg-(--primary-100) hover:bg-blue-600 transition text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl text-xs font-medium">
-            <a href="https://lapshift.up.railway.app/register">Sign Up</a>
-          </button>
+          <Link to="https://lapshift.up.railway.app/register">
+            <button className="bg-(--primary-100) hover:bg-blue-600 transition text-white px-4 sm:px-6 py-3 sm:py-3 rounded-xl text-xs font-medium">
+              Sign Up
+            </button>
+          </Link>
         </nav>
 
         {/* HERO CONTENT */}
@@ -58,15 +64,15 @@ export default function Hero() {
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <button className="bg-(--primary-100) hover:bg-blue-600 transition text-white px-6 py-3 rounded-xl font-medium">
-                <a className="block" href="https://lapshift.up.railway.app/">
+                <Link className="block" to="https://lapshift.up.railway.app/">
                   Shop Now
-                </a>
+                </Link>
               </button>
 
               <button className="border border-(--primary-100) text-(--primary-100) hover:bg-blue-50 transition px-6 py-3 rounded-xl font-medium">
-                <a className="block" href="/#how-it-works">
+                <Link className="block" to="/#how-it-works">
                   How it works
-                </a>
+                </Link>
               </button>
             </div>
           </div>
